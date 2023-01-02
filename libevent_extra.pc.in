@@ -1,16 +1,3 @@
-#libevent pkg-config source file
-
-prefix=@prefix@
-exec_prefix=@exec_prefix@
-libdir=@libdir@
-includedir=@includedir@
-
-Name: libevent_extra
-Description: libevent_extra
-Version: @VERSION@
-Requires:
-Conflicts:
-Libs: -L${libdir} -levent_extra
-Libs.private: @LIBS@
-Cflags: -I${includedir}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:b2f96ff2d942ae3f98d1b4ae063513ea781b217da5baf0c861c873b4b43873de
+size 284

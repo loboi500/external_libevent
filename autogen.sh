@@ -1,22 +1,3 @@
-#!/bin/sh
-
-MAKE=make
-if command -v gmake >/dev/null 2>/dev/null; then
-  MAKE=gmake
-fi
-$MAKE maintainer-clean >/dev/null 2>/dev/null
-
-if [ -x "`which autoreconf 2>/dev/null`" ] ; then
-   exec autoreconf -ivf
-fi
-
-LIBTOOLIZE=libtoolize
-SYSNAME=`uname`
-if [ "x$SYSNAME" = "xDarwin" ] ; then
-  LIBTOOLIZE=glibtoolize
-fi
-aclocal -I m4 && \
-	autoheader && \
-	$LIBTOOLIZE && \
-	autoconf && \
-	automake --add-missing --force-missing --copy
+version https://git-lfs.github.com/spec/v1
+oid sha256:e2e3ea1ed396b2b6669c27b162059ae2d24780c3b28c7e764754263f1bd62f6b
+size 431

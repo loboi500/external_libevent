@@ -1,16 +1,3 @@
-#libevent pkg-config source file
-
-prefix=@prefix@
-exec_prefix=@exec_prefix@
-libdir=@libdir@
-includedir=@includedir@
-
-Name: libevent
-Description: libevent is an asynchronous notification event loop library
-Version: @VERSION@
-Requires:
-Conflicts:
-Libs: -L${libdir} -levent
-Libs.private: @LIBS@
-Cflags: -I${includedir}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:5c2dbc36b0a63bc98e9ce9be82d6051cec62e82bdfdd3b326388b70eb8947f7d
+size 317
